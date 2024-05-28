@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <main><div class="container">
+        <div class="title text-center">
+            <h1 class="">Bookmarker</h1>
+        </div>
+        <div class="discription text-center ">
+            <h1><i class="fa-solid fa-bookmark"></i>
+                 Bookmark your favorite sites 
+            <i class="fa-solid fa-bookmark"></i></h1></div>
+            
+            <div class="input m-3"><label class="m-2" for="markName"> 
+                <i class="fa-solid fa-book-bookmark"></i>Site Name</label>
+                <input oninput="validationName()" type="text" class="form-control " id="markName" placeholder="Bookmark name">
+            <p id="massageName" class="alert alert-info d-none">Site name must contain at least 3 characters</p>
+            </div>
+            <div class="input m-3"><label class="m-2" for="markUrl"> 
+                <i class="fa-solid fa-link"></i>Site URL</label>
+                <input oninput="validationUrl()" type="url" class="form-control " id="markUrl" placeholder="websit URL">
+                <p id="massageUrl" class="alert alert-info d-none">Site URL must be a valid one  beginig https: or ftb: or https:</p>
+            <div class="button text-center m-3"><button onclick="addSite()"  class="btn btn-danger  px-5 py-2">submit</button></div>
+            </div>
+                <div class="table m-5">
+                    <table class="table ">
+                        <thead>
+                            <th>Index</th>
+                            <th>Website Name</th>
+                            <th>Visit</th>
+                            <th>Delete</th>
+                        </thead>
+                        <tbody id="tableData">
+                            
+                        </tbody>
+                    </table>
+                </div>
+    </div></main>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="index.js"></script>
+</body>
+</html>
